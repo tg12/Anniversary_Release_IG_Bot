@@ -32,5 +32,11 @@ There is a discord.
 
 I have created a twitter account which tweets all my trades. 
 
+## **Usage:**
+
+*This will run giving it a highest CPU priority and generate a log file stored in the logs folder. You can then view this with tail -f. nohup keeps it running when you have exited your terminal session.* 
+
+    nice -n -20 nohup python3 -u trading_bot.py > logs/stocks_live.log &
+    nice -n -20 nohup python3 -u trading_bot.py > logs/stocks_demo.log &
 
 
